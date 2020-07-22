@@ -85,7 +85,9 @@ int process(int x)
 }
 ```
 
-I assumed the `__isoc99_scanf()` call wrote into `local_1c`. Usually, there should be parameters given for the `__isoc99_scanf()` (or atleast in IDA). Assuming the previous, it is clear that we are given a challenge `x` times, where `x` is the randomly generated number from `display_number`. At each iteration, the challenge generates `key` using function call `C(x, i)` and checks that the user input matches. If the `flag` remains `true` after the challenges, we get the flag. If any of the user's answers are incorrect, the `flag` is set to false. So, if we understand how `C` (below) works, we can automate the process of answering the challenges.
+I assumed the `__isoc99_scanf()` call wrote into `local_1c`. Usually, there should be parameters given for the `__isoc99_scanf()` (or atleast in IDA). 
+
+Assuming the previous, it is clear that we are given a challenge `x` times, where `x` is the randomly generated number from `display_number`. At each iteration, the challenge generates `key` using function call `C(x, i)` and checks that the user input matches. If the `flag` remains `true` after the challenges, we get the flag. If any of the user's answers are incorrect, the `flag` is set to false. So, if we understand how `C` (below) works, we can automate the process of answering the challenges.
 
 ```C
 long C(int x,int i)

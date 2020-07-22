@@ -7,7 +7,7 @@
 First, I ran the code.
 
 ```Shell
-d@d:~$ ./bliase
+d@d:~$ ./blaise
 16
 ```
 

@@ -4,6 +4,7 @@
 `I recovered a binary from my teacher's computer. I tried to reverse it but I couldn't.`
 
 ## Analysis
+First, I ran the code.
 
 ```Shell
 d@d:~$ ./bliase
@@ -153,7 +154,7 @@ print(target.recvuntil("}"))
 
 Running this got us the flag!
 
-```
+```Shell
 d@d:~/$ python3 solver.py
 [+] Opening connection to chall.csivit.com on port 30808: Done
 b"csictf{y0u_d1sc0v3r3d_th3_p4sc4l's_tr14ngl3}"

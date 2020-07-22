@@ -84,7 +84,7 @@ The only thing left would be to reverse the process that led to our encrypted ke
 ## Automate with Z3
 Using Z3, we can set constraints and solve for each byte of our flag. I won't go too deep into how it works, but my script is below.
 
-{% highlight python %}
+```Python
 from z3 import *
 raw_flag = b"\x48\x5f\x36\x35\x35\x25\x14\x2c\x1d\x01\x03\x2d\x0c\x6f\x35\x61\x7e\x34\x0a\x44\x24\x2c\x4a\x46\x19\x59\x5b\x0e\x78\x74\x29\x13\x2c"
 
@@ -119,7 +119,7 @@ if s.check() == sat:
     print("".join([chr(s.model()[c].as_long()) for c in flag]))
 else:
     print("Failed")
-{% endhighlight %}
+```
 
 Running this outputs:
 

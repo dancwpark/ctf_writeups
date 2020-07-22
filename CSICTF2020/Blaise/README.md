@@ -5,7 +5,7 @@
 
 ## Analysis
 
-```
+```Shell
 d@d:~$ ./bliase
 16
 ```

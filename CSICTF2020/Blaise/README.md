@@ -19,7 +19,6 @@ Unsure what the binary did, I decompiled it with Ghidra. Below is the `main` fun
 int main(void) {
     time_t rseed;
     ulong x;
-Running this gt us the flag!o
 
     setbuf(stdout,(char *)0x0);
     setbuf(stdin,(char *)0x0);

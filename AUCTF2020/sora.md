@@ -12,7 +12,7 @@ This was another simple reverse engineering task. It can also be found on the CT
 
 ## Write-up
 I started by just looking at the disassembly of the file. See the image below!
-![alt text](https://github.com/dancwpark/ctf_writeups/AUCTF2020/images/autctf2020/sora-dis.PNG "auctf sora dis")
+![alt text](https://raw.githubusercontent.com/dancwpark/ctf_writeups/master/AUCTF2020/images/sora-dis.PNG "auctf sora dis")
 
 One branch leads to the `print_flag` function, whereas the other branch leads to printing "That's not it!". It is pretty obvious which path we want to take. Looking at the block before the branching paths, we can see that there is a call to a function `encrypt`. Instead of looking at that (which includes a bunch of transformations on our input), we can use `angr` to solve this challenge for us. 
 

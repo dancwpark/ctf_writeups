@@ -1,13 +1,3 @@
----
-title: 'AUCTF2020 Sora'
-date: 2020-04-09
-permalink: /posts/2020/09/auctf-sora/
-tags:
-  - ctf
-  - angr
----
-
-
 This was another simple reverse engineering task. It can also be found on the CTF hosts website linked in the last post). Lucky for me, I have been trying to learn and incorporate [angr](https://angr.io/) more into my workflow. 
 
 ## Write-up

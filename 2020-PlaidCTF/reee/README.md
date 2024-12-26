@@ -48,7 +48,7 @@ Using GDB, we can run the code so that the `check_flag` function is `convert`ed 
 Because the function  `convert` does not alter the function's size, we can simply replace the function in `./reee`. This can be done easily through python and splicing usingn the start and end addresses of `check_flag`. Note that the actual addresses would be `0x6ef` and `0x93f` as GDB (and other binary analysis tools) automatically loads programs with a base address of `0x4000000`. I belive IDA and Binary Ninja can automatically use the `*.bin` file to aid in the analysis of encrypted functions, but I was not able to find such a shortcut for Ghidra. 
 
 ## Analysis Part 2: Electric Boogaloo
-Now taht we have a new file with unencrypted `check_flag`, we can load it up on Ghidra. For the sake of my fingers, I didn't rename variables and the like again unless it was something new.
+Now that we have a new file with unencrypted `check_flag`, we can load it up on Ghidra. For the sake of my fingers, I didn't rename variables and the like again unless it was something new.
 
 Our `check_flag` function became the following:
 

@@ -1,3 +1,3 @@
-Check out the write-up @ dancwpark.github.io
+# 2020 CSAW Quals
 
-Moving files over soon!
+Writeups lost...

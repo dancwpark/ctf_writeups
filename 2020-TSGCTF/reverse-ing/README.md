@@ -15,7 +15,6 @@ which would make the symbolic execution take too long.
 With these done, I began writing the python script.
 
 ## Angr Solve
-The script is included in my [repo](https://github.com/re-sejong/ctf_writeups/tree/master/TSGCTF2020/reverse-ing), but is also below:
 ```Python
 import angr
 import claripy
